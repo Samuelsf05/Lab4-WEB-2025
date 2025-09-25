@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio Final – Guía 4</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Ejercicio Final – Guía 4</h1>
+
+    <p>Selecciona un día de la semana para ver o modificar su recordatorio.</p>
+
+  <main class="grid-dias">
+    <button onclick="mostrarRecordatorio('lunes')">Lunes</button>
+    <button onclick="mostrarRecordatorio('martes')">Martes</button>
+    <button onclick="mostrarRecordatorio('miércoles')">Miércoles</button>
+    <button onclick="mostrarRecordatorio('jueves')">Jueves</button>
+    <button onclick="mostrarRecordatorio('viernes')">Viernes</button>
+    <button onclick="mostrarRecordatorio('sábado')">Sábado</button>
+    <button onclick="mostrarRecordatorio('domingo')">Domingo</button>
+  </main>
+
+  <section id="seccion-resultado" class="oculto">
+    <h2 id="dia-seleccionado"></h2>
+    <p id="recordatorio"></p>
+
+    <label for="nuevo">Modificar recordatorio:</label>
+    <input type="text" id="nuevo" placeholder="Escribe un nuevo recordatorio...">
+    <button onclick="modificarRecordatorio()">Guardar cambio</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
